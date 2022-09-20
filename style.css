@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: #ECF4FF; /* fundo*/
+  color: #1C1C1C; /* cor das letras*/
+  margin: 64px; /* da um espaço na margem */
+  border-radius: 20px; /* borda */
+  box-shadow: 6px 6px 6px #0E1D2F; /* borda com sensação de aproximidade*/
+  padding: 64px; /* ajusta a imagem */
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /* justifica os elementos que estao dentro, space-between vai gerar um espaco entre os elementos*/
+}
+
+.perfil {
+  display: flex;  /* flexbox > alinha e posiciona os itens da sua preferencia*/
+  
+}
+
+.perfil-foto {
+  border-radius: 460px; /*dessa forma a foto fica redonda*/
+  max-height: 160px; /* altura*/
+  drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* ajusta a borda*/
+  
+}
+
+.titulo {
+  margin-left: 16px; /* dessa forma o titulo fica afastado a esquerda*/
+  
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;   /* alinha o elemento sozinho, flex en > vai deixar ele la no final da tela*/
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px;
+  background: #ECF4FF;
+  border-radius: 100px;
+  
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column; /* dessa forma a lista vai ficar em colona*/
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  margin-top: 35px; /* margem da parte de cima*/
+  padding: 35px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none; /*dessa forma tiramos o estilo que ja vem padronizado*/
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-itens {
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  flex-direction: column;
+  margin-left: 70px;
+  
+}
+
+.projetos-itens a {  /* toda tag a (ancora) que estaja dentro do elemento projetos item , vai ser estilizada */
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #F7F7F7;
+
+}
+
+.dark .projetos {
+  color: #1C1C1C;
+}
+
+.dark .tema button {
+  background: #1C1C1C;
+  color: #FFFFFF;
+  border: 2px solid #f7f7f7;
+}
